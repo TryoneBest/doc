@@ -4,7 +4,7 @@
 
 官网下载安装即可，安装完会有如图3个图标
 
-![docker's app](./img/docker's%20app.png)
+![docker's app](./img/docker's app.png)
 
 ## 安装虚拟机即docker
 
@@ -51,9 +51,23 @@
      gitlab/gitlab-ce:latest
    ```
 
+4. 修改gitlab.rb文件
+
+   ```shell
+   sudo vi /mnt/gitlab/etc/gitlab.rb
+   ```
+
+   把其中的external_url字段改为你的域名，我此处为http://gitlab.hytek.com
+
+   然后重启容器
+
+   ```shell
+   docker restart Gitlab
+   ```
+
    
 
-4. 修改nginx配置文件
+5. 修改nginx配置文件
 
    ```nginx
    upstream gitlab{
