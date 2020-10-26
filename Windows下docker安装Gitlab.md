@@ -4,7 +4,7 @@
 
 官网下载安装即可，安装完会有如图3个图标
 
-![docker's app](./img/docker's app.png)
+![docker's app](https://github.com/TryoneBest/doc/blob/master/img/docker's%20app.png)
 
 ## 安装虚拟机即docker
 
@@ -20,7 +20,7 @@
 
    `docker pull gitlab/gitlab-ce:latest`可以访问阿里或清华镜像加速网获得最新的镜像地址
 
-   ![docker_pull_gitlab](./img/docker_pull_gitlab.png)
+   ![docker_pull_gitlab](https://github.com/TryoneBest/doc/blob/master/img/docker_pull_gitlab.png)
 
 2. 创建GitLab的配置(etc)、日志(log)、数据(data)放到容器之外，便于日后升级
 
